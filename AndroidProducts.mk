@@ -14,10 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_X00P.mk
+    $(LOCAL_DIR)/aosp_X00R.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_X00P-user \
     aosp_X00P-userdebug \
     aosp_X00P-eng
-

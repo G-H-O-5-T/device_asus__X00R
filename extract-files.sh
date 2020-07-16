@@ -24,7 +24,7 @@ fi
 set -e
 
 # Required!
-DEVICE=X00P
+DEVICE=X00R
 VENDOR=asus
 
 # Load extract_utils and do some sanity checks

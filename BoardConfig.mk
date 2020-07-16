@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/asus/X00P
+DEVICE_PATH := device/asus/X00R
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
@@ -139,10 +139,10 @@ BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_CONFIG := X00P_defconfig
+TARGET_KERNEL_CONFIG := X00R_defconfig
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_SOURCE := kernel/asus/X00P
+TARGET_KERNEL_SOURCE := kernel/asus/X00R
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -219,4 +219,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 QC_WIFI_HIDL_FEATURE_DUAL_AP := true
 
 # Inherit the common proprietary files
--include vendor/asus/X00P/BoardConfigVendor.mk
+-include vendor/asus/X00R/BoardConfigVendor.mk

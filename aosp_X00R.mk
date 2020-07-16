@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/asus/X00P
+DEVICE_PATH := device/asus/X00R
 
 # Inherit from source
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -16,14 +16,14 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 720
 
-# Inherit device stuff
+# Inherit from X00R device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
-# Device identifiers.
-PRODUCT_DEVICE := X00P
-PRODUCT_NAME := aosp_X00P
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := X00R
+PRODUCT_NAME := aosp_X00R
 PRODUCT_BRAND := asus
-PRODUCT_MODEL := ASUS_X00PD
+PRODUCT_MODEL := ASUS_X00RD
 PRODUCT_MANUFACTURER := asus
 TARGET_VENDOR := asus
 BOARD_VENDOR := asus
